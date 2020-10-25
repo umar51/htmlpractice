@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+</head>
+<body>
+
+    <form action="https://www.example.com/login.php" method="GET">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+        <p>First name
+            <input type="text" name="firstname" size="15" maxlength="30" required/>
+
+            <br/>
+            <br/>
+            Last name
+            <input type="text" name="lastname" size="15" maxlength="30"/>
+        </p>
+
+        <p>Passward
+            <input type="password" name="password" size="15" maxlength="30"/>
+
+            <br/>
+            <br/>
+            Re-type Passward
+            <input type="password" name="password" size="15" maxlength="30"/>
+        </p>
+
+        <p>
+            Gender:
+            <label for="male"/> 
+            <input  id="male" type="radio" name="gender" value="m" checked/> Male
+            <label><input type="radio" name="gender" value="f"/> Female</label> 
+        </p>
+
+        <p>
+            Enter date of birth <br/>
+            <input type="date" name="dob"/>
+        </p>
+
+        <p>
+            Enter email <br/>
+            <input type="email" name="email"/>
+        </p>
+
+        <p>Enter website <br/>
+            <input type="url" name="profile"/>
+        </p>
+
+        </fieldset>
+
+        <p>
+            Interests:
+            <input type="checkbox" name="interests" value="men"/>Men clothings
+            <input type="checkbox" name="interests" value="wmn"/>Women clothings
+            <input type="checkbox" name="interests" value="acc"/>Accessories
+            <input type="checkbox" name="interests" value="elec"/>Electronics
+        </p>
+
+        <p>
+            Nationality:
+            <select name="countries" multiple>
+                <option value="pak">Pakistan</option>
+                <option value="ind">India</option>
+                <option value="ch">China</option>
+                <option value="us">USA</option>
+            </select>
+        </p>
+
+        <p>
+            Comments: <br/>
+
+            <textarea name="comments" rows="6" cols="15">Enter comments here</textarea>
+        </p>
+
+        <p>
+            Upload your picture:
+            <br/> <br/>
+            <input type="file" name="picture"/>
+            <br/>
+            <br/>
+            <input type="submit" value="Upload"/>
+        </p>
+        <input type="submit"/>
+
+        <input type="image" src="https://www.pngitem.com/pimgs/m/208-2086994_green-submit-button-png-submit-button-png-green.png"/>
+    </form>
+    
+</body>
+</html>
